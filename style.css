@@ -1,0 +1,1648 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-content {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box-telephone {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: .5s;
+    padding: 45px;
+    display: none;
+    transition: .2s;
+    opacity: 0;
+}
+
+.box-telephone.mostrar {
+    transition: .2s;
+    display: block;
+    opacity: 1;
+}
+
+.suportezap {
+    height: 75px;
+    width: 75px;
+    position: relative;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a187de;
+    transition: .4s ease-in-out;
+}
+
+.suportezap:hover {
+    background: #bfaaf0;
+}
+
+.suportezap img {
+    height: 45px;
+    width: 45px;
+    z-index: 1;
+}
+
+.suportezap::before,
+.suportezap::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: -12px;
+    right: -12px;
+    top: -12px;
+    bottom: -12px;
+    border-radius: 50%;
+    border: 4px solid #a187de;
+    animation: animarTelefone 2.5s linear infinite;
+    opacity: 0;
+}
+
+.suportezap::after {
+    animation-delay: .5s;
+}
+
+
+
+
+
+/* CAIXA DOS COOKIES */
+
+.cookies-msg {
+    width: 80%;
+    background: #a187de;
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 15px;
+    font-family: Montserrat;
+    transition: .2s;
+    display: none;
+}
+
+.cookies-msg.mostrar {
+    display: block;
+}
+
+.cookies-msg .cookies-txt {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.cookies-msg .cookies-btn {
+    margin-left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.cookies-msg .cookies-btn .btn-aceito {
+    background: black;
+    color: white;
+    font-weight: 700;
+    border: 0;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.cookies-msg .cookies-btn .btn-nao-aceito {
+    color: black;
+    font-weight: 700;
+    height: 100%;
+    background-color: transparent;
+    border: 0;
+    font-size: 18px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cookies-msg .cookies-btn button:hover {
+    scale: .97;
+}
+
+
+
+
+@keyframes animarTelefone {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+
+
+
+.otherDisplays_img {
+    display: none;
+}
+
+.box-menu-links,
+.a-content-links-menu
+
+/* DEFININDO PARA NÃO APARECER O MENU DE LINKS EM OUTROS TAMANHOS */
+    {
+    display: none;
+}
+
+
+
+
+
+body {
+    overflow-x: hidden;
+}
+
+.nav-bar {
+    height: 130px;
+    width: 100%;
+}
+
+.nav-logo-links {
+    display: flex;
+}
+
+.nav-box {
+    height: 100px;
+    width: 40%;
+    padding: 12px 90px;
+    align-items: center;
+}
+
+.nav-box img {
+    height: 70px;
+}
+
+
+
+.nav-links {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links a::after {
+    content: " ";
+    display: flex;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: .5s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 110%;
+    display: flex;
+}
+
+.nav-box-redes {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(161, 135, 222);
+}
+
+.fa-instagram,
+.fa-facebook-f,
+.fa-x-twitter {
+    transition: .3s;
+}
+
+
+.fa-instagram:hover,
+.fa-facebook-f:hover,
+.fa-x-twitter:hover {
+    scale: .9;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.main-content {
+    height: 3200px;
+    width: 100%;
+    /* background-color: rgb(103, 15, 245); */
+}
+
+.sec-boas_vindas {
+    margin-bottom: 50px;
+    background: gray;
+    height: 350px;
+}
+
+.boxImgOtherDisplaysGrande {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/BvMercado/boas-vindas-mercado-grande.png");
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+.img-mercado {
+    width: 150px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container-imgs {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 20px 20px;
+    height: 600px;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.container-imgs div {
+    transition: .2s scale ease-in-out;
+}
+
+.container-imgs div:hover {
+    transition: .2s scale ease-in-out;
+    scale: 1.01;
+}
+
+.img-1 {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    flex-basis: 250px;
+    background-image: url("img/infoMercado/info-mercado-img-01.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-2 {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    flex-basis: 250px;
+    height: 250px;
+    background-image: url("img/infoMercado/info-mercado-img-02.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-3 {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    flex-basis: 300px;
+    height: 300px;
+    background-image: url("img/infoMercado/info-mercado-img-03.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-4 {
+    background-color: rgb(0, 0, 255);
+    padding: 10px;
+    flex-basis: 250px;
+    height: 250px;
+    background-image: url("img/infoMercado/info-mercado-img-04.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-mercado_ofertas {
+    display: flex;
+}
+
+.body-carrossel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxP_carrossel {
+    height: 100px;
+    width: 50%;
+    margin-left: 26px;
+    align-self: flex-start;
+    justify-self: center;
+    position: absolute;
+    display: flex;
+}
+
+.p_content_carrossel {
+    display: flex;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Montserrat;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    color: #a187de;
+    text-decoration: underline;
+}
+
+.container {
+    height: 390px;
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    position: relative;
+}
+
+.box-container {
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #313131;
+    box-shadow: 0px 3px 5px rgb(177, 177, 177);
+}
+
+.oferta {
+    height: 390px;
+    width: 300px;
+    background-color: rgb(124, 79, 79);
+}
+
+.oferta-1 {
+    background-color: #ebad03;
+}
+
+.oferta-2 {
+    background-color: #09a137;
+}
+
+.oferta-3 {
+    background-color: #30c0ca;
+}
+
+.oferta-4 {
+    background-color: #dd1572;
+}
+
+.oferta-5 {
+    background-color: #cc1212;
+}
+
+
+
+
+
+
+
+.sobre {
+    margin-top: 50px;
+    /* background-color: #ccc; */
+    height: 700px;
+    width: 100%;
+    display: flex;
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title-quemsou {
+    position: absolute;
+    font-family: Montserrat;
+    text-align: center;
+    height: 100px;
+    width: 1249px;
+    color: #a187de;
+}
+
+.title-quemsou p {
+    font-size: 82px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 400px;
+}
+
+.boxImage_acenando {
+    width: 40%;
+    margin-top: 107px;
+    height: 500px;
+}
+
+.img_acenando {
+    background-image: url("img/acenando-quemsoueu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+}
+
+.BoxDesc_quemsou {
+    width: 60%;
+    margin-top: 100px;
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.desc_quemsou {
+    margin: 50px;
+    font-family: Montserrat;
+    font-size: 25px;
+    text-shadow: 0px 2px 10px #b6b6b6;
+}
+
+
+
+
+
+
+
+
+
+.boxSectionDepoimento {
+    height: 100%;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.boxTitleDepoimento {
+    height: 100px;
+    width: 100%;
+    /* background-color: #313131; */
+}
+
+.boxTitleDepoimento p {
+    font-size: 70px;
+    font-weight: 700;
+    color: #a187de;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Montserrat;
+    padding: 4px;
+}
+
+.boxesDepoimento {
+    height: 400px;
+    /* background-color: #cc1212; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxesDepoimento .depoimento {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #a1a1a1;
+    overflow: hidden;
+    border: 1px solid black;
+    box-shadow: 0px 5px 7px rgb(172, 172, 172);
+    padding: 5px;
+}
+
+.boxUsuario {
+    /* background-color: #cfcfcf; */
+    height: 90px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.BoximgUsuario {
+    height: 100%;
+    width: 38%;
+    /* background-color: yellow; */
+    padding: 5px;
+}
+
+.imgUsuario {
+    height: 100%;
+    width: 81%;
+    /* background-color: gray; */
+    margin-left: 10px;
+    border-radius: 100px;
+    border: 1px solid rgb(173, 173, 173);
+    background-image: url("img/fotoperfil-depoimento.png");
+    background-size: contain;
+}
+
+.nomeUsuario {
+    width: 62%;
+    height: 50%;
+    /* background-color:rgb(0, 0, 255); */
+}
+
+.nomeUsuario p {
+    /* background-color: #cfcfcf; */
+    height: 100%;
+    font-size: 23px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+.rankUsuario {
+    position: absolute;
+    height: 50%;
+    margin-top: 45px;
+    margin-left: 114px;
+    width: 186px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: center;
+}
+
+.fa-star {
+    color: yellow;
+    margin: 2px;
+}
+
+.descUsuario {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.boxMercadoLocal {
+    margin-top: 150px;
+    height: 600px;
+    width: 100%;
+}
+
+.boxP_mercado {
+    height: 100px;
+    width: 100%;
+    font-size: 65px;
+    font-weight: 700;
+    font-family: Montserrat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-decoration: underline;
+    color: #a187de;
+    margin-bottom: 30px;
+}
+
+.boxP_mercado p {
+    width: 100%;
+    text-align: center;
+    /* background: #ccc; */
+
+}
+
+.iframeMap_mercado {
+    height: 450px;
+    width: 100%;
+    padding: 30px;
+    /* background-color: #ffffb0;  */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content {
+    height: 350px;
+    width: 100%;
+    background-color: #a187de;
+    margin-top: 100px;
+}
+
+.redes {
+    height: 70px;
+    width: 100%;
+    background-color: #a187de;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes img {
+    height: 50px;
+    border-radius: 30px;
+    transition: .2s scale ease-in-out;
+}
+
+.redes img:hover {
+    cursor: pointer;
+    transition: .2s scale ease-in-out;
+    scale: 0.9;
+}
+
+.boxFooter {
+    height: 280px;
+}
+
+.boxContents {
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #a187de;
+    font-size: 16px;
+    font-family: Montserrat;
+}
+
+.boxContents p {
+    margin: 15px;
+}
+
+.boxContents p a {
+    color: #ccc;
+}
+
+.contatos {
+    margin-top: 20px;
+    background-color: #d6d6d6;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.caixa-primaria-slogan {
+    background-color: #bbbbbb;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa-secundaria-slogan {
+    display: flex;
+    align-items: center;
+}
+
+.p-slogan {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 800;
+    font-family: Montserrat;
+    border-right: 7px solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 27ch;
+    animation: typing 2s steps(27), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.caixa-secundaria-slogan img {
+    height: 50px;
+    border-radius: 20px;
+}
+
+.mobile-menu-item {
+    display: none;
+}
+
+.iframeMap_mercado_otherdisplays {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1207px) {
+
+    /* CAIXA DOS COOKIES */
+
+    .cookies-msg .cookies-txt {
+        display: block;
+        padding: 20px;
+    }
+
+    .cookies-msg .cookies-btn {
+        margin-top: 25px;
+        display: flex;
+    }
+
+
+    /* CABEÇALHO */
+
+    .nav-bar {
+        height: 130px;
+        width: 100%;
+    }
+
+    .nav-box {
+        height: 100px;
+        width: 20%;
+        margin-right: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* CONTEÚDO PRINCIPAL IMAGEM */
+
+    .sec-boas_vindas {
+        background: #ccc;
+        max-height: 340px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .boxImgOtherDisplaysMedio {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("img/BvMercado/boas-vindas-mercado-medio.png");
+        background-position: center;
+    }
+
+    .boxImgOtherDisplaysGrande {
+        display: none;
+    }
+
+    /* ESPECIALIDADES DO MERCADO CAIXAS */
+
+    .img-1 {
+        height: 250px;
+    }
+
+    .img-3 {
+        flex-basis: 250px;
+        height: 250px;
+    }
+
+    /* SOBRE O DONO O MERCADO */
+
+    .main-content {
+        height: 3690px;
+    }
+
+    .sobre {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* background-color: #ccc;   */
+        padding: 0;
+    }
+
+    .boxImage_acenando {
+        /* background: yellow; */
+        width: 50%;
+        /* background-color: #ff1d1d;  */
+        max-height: 500px;
+    }
+
+    .BoxDesc_quemsou {
+        /* background: blue; */
+        width: 50%;
+        flex-direction: column;
+        padding: 20px;
+        height: 100%;
+        row-gap: 30px;
+        overflow: initial;
+    }
+
+    .img_acenando {
+        cursor: default;
+        width: 100%;
+        max-height: 800px;
+        min-height: 200px;
+        height: 100%;
+        background-position: center;
+    }
+
+    .desc_quemsou {
+        padding: 0;
+        margin: 0;
+    }
+
+    .title-quemsou {
+        position: absolute;
+        text-align: center;
+        height: 107px;
+        width: 100%;
+    }
+
+    .title-quemsou p {
+        font-size: 52px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        /* background: #7c4f4f; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* DEPOIMENTOS DO MERCADO */
+
+    .boxSectionDepoimento {
+        display: block;
+        height: 900px;
+        margin-top: 200px;
+        /* background: #7c4f4f; */
+    }
+
+    .boxTitleDepoimento p {
+        width: 100%;
+        font-size: 40px;
+        /* background: #09a137; */
+    }
+
+    .boxesDepoimento {
+        margin-top: 85px;
+        gap: 44px;
+        flex-direction: column;
+        height: 1000px;
+        width: 100%;
+        /* background-color: #313131; */
+    }
+
+
+
+
+
+
+
+
+
+    /* LOCAL DO MERCADO */
+
+    .boxMercadoLocal {
+        margin-top: 400px;
+        width: 100%;
+        display: block;
+    }
+
+    .boxP_mercado {
+        width: 100%;
+        font-size: 40px;
+        /* background-color: #cc1212;  */
+        text-align: center;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 2000px;
+    }
+
+    .redes {
+        margin-bottom: 10px;
+    }
+
+    .boxFooter {
+        height: 450px;
+    }
+
+    .contatos {
+        flex-direction: column;
+        height: 10%;
+        margin: 0px;
+        padding: 0;
+    }
+
+    .boxContents {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .caixa-primaria-slogan {
+        margin-top: 140px;
+    }
+
+    .p-slogan {
+        font-size: 15px;
+    }
+
+    .caixa-secundaria-slogan img {
+        margin: 0;
+        padding: 0;
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (max-width: 1206px) {
+    .main-content {
+        height: 1900px;
+    }
+}
+
+@media screen and (max-width: 936px) {
+    .nav-links a {
+        display: none;
+    }
+
+    .mobile-menu-item {
+        display: block;
+    }
+
+    .box-mobile-menu-item {
+        width: 48px;
+        height: 55px;
+        right: 0;
+        margin: 22px 40px;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+    }
+
+    .sec-boas_vindas {
+        background: #ccc;
+        max-height: 250px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .boxImgOtherDisplaysPequeno {
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("img/BvMercado/boas-vindas-mercado-pequeno.png");
+        background-position: center;
+    }
+
+    .boxImgOtherDisplaysGrande,
+    .boxImgOtherDisplaysMedio {
+        display: none;
+    }
+
+    /* 
+    .nav-logo-links {
+        display: flex;
+        width: 100%;
+        background:rgb(124, 79, 79);
+    } */
+
+    .mobile-menu-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linha {
+        width: 100%;
+        height: 5px;
+        background: rgb(209, 209, 209);
+        display: block;
+        margin: 9px 0px 0px;
+        position: relative;
+        transform-origin: center;
+        transition: .2s;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(1) {
+        transform: translateY(16px) rotate(-45deg);
+        background: #a187de;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(2) {
+        opacity: 0;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(3) {
+        transform: translateY(-12px) rotate(45deg);
+        background: #a187de;
+    }
+
+
+    /* MENU DOS LINKS MOBILE E PC MÉDIO */
+
+    .box-menu-links-show {
+        display: flex;
+    }
+
+    .box-menu-items {
+        height: 0px;
+        width: 100%;
+        transition: .2s;
+        position: absolute;
+    }
+
+    .box-menu-items.ativar {
+        transition: .2s;
+        height: 200px;
+        width: 100%;
+        visibility: visible;
+        position: relative;
+        background-color: #e4a00e;
+        overflow: hidden;
+    }
+
+    .box-menu-items.ativar .box-menu-links {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        transition: .2s .6s;
+    }
+
+
+    .a-content-links-menu {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 23px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .a-content-links-menu a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+    }
+
+    .a-content-links-menu a::after {
+        content: " ";
+        display: flex;
+        width: 0%;
+        height: 2px;
+        background-color: #000;
+        transition: .5s ease-in-out;
+    }
+
+    .a-content-links-menu a:hover::after {
+        transition: .5s .2s ease-in-out;
+        width: 100%;
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1117px) {
+
+    .main-content {
+        height: 2690px;
+    }
+
+    /* CABEÇALHO */
+
+    .nav-bar {
+        height: 130px;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        width: 100%;
+        /* background-color: gray; */
+    }
+
+
+    /* OFERTAS CAIXAS */
+
+    .info-mercado_ofertas {
+        /* background-color: #30c0ca;  */
+        height: 525px;
+        width: 100%;
+    }
+
+    .info-mercado_ofertas,
+    .img-mercado {
+        display: block;
+    }
+
+    .container-imgs {
+        /* background: #ccc;   */
+        height: 100%;
+        margin: 0 auto;
+        align-items: flex-start;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4 {
+        height: 250px;
+        width: 250px;
+    }
+
+    /* OFERTAS DO MERCADO */
+
+    .body-carrossel {
+        display: block;
+        margin-top: 140px;
+        /* background: #ff0000;  */
+        position: absolute;
+        width: 100%;
+    }
+
+    .boxP_carrossel {
+        display: block;
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+        /* background-color:rgb(124, 79, 79);  */
+    }
+
+    .p_content_carrossel {
+        /* background: #313131;  */
+        width: 100%;
+    }
+
+    .box-container {
+        margin: auto;
+        margin-top: 150px;
+        display: block;
+        width: 300px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .sobre {
+        margin-top: 800px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    /* DEFININDO ESPAÇO PARA O MENU IMAGEM */
+
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-item {
+        display: block;
+    }
+
+    .box-mobile-menu-item {
+        width: 48px;
+        height: 55px;
+        right: 0;
+        margin: 22px 40px;
+        position: absolute;
+        cursor: pointer;
+        display: flex;
+    }
+
+    /* 
+    .nav-logo-links {
+        display: flex;
+        width: 100%;
+        background:rgb(124, 79, 79);
+    } */
+
+    .mobile-menu-item {
+        width: 100%;
+        height: 100%;
+    }
+
+    .linha {
+        width: 100%;
+        height: 5px;
+        background: rgb(209, 209, 209);
+        display: block;
+        margin: 9px 0px 0px;
+        position: relative;
+        transform-origin: center;
+        transition: .2s;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(1) {
+        transform: translateY(16px) rotate(-45deg);
+        background: #a187de;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(2) {
+        opacity: 0;
+    }
+
+    .box-mobile-menu-item.ativar .linha:nth-child(3) {
+        transform: translateY(-12px) rotate(45deg);
+        background: #a187de;
+    }
+
+
+    /* MENU DOS LINKS MOBILE E PC MÉDIO */
+
+    .box-menu-links-show {
+        display: flex;
+    }
+
+    .box-menu-items {
+        height: 0px;
+        width: 100%;
+        transition: .2s;
+        background-color: #a15a09;
+        position: absolute;
+    }
+
+    .box-menu-items.ativar {
+        transition: .2s;
+        height: 200px;
+        width: 100%;
+        visibility: visible;
+        position: relative;
+        background-color: #e4a00e;
+        overflow: hidden;
+    }
+
+    .box-menu-items.ativar .box-menu-links {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        transition: .2s .6s;
+    }
+
+
+    .a-content-links-menu {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        font-size: 23px;
+        flex-direction: column;
+    }
+
+    .a-content-links-menu a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+    }
+
+    .a-content-links-menu a::after {
+        content: " ";
+        display: flex;
+        width: 0%;
+        height: 2px;
+        background-color: #000;
+        transition: .5s ease-in-out;
+    }
+
+    .a-content-links-menu a:hover::after {
+        transition: .5s .2s ease-in-out;
+        width: 100%;
+        display: flex;
+    }
+
+
+
+
+    .main-content {
+        height: 3490px;
+    }
+
+    /* OFERTAS CAIXAS */
+
+    .info-mercado_ofertas {
+        /* background-color: #30c0ca; */
+        height: 1200px;
+        width: 100%;
+    }
+
+    .container-imgs {
+        display: flex;
+        height: 100%;
+        /* background: #ccc; */
+        width: 320px;
+        flex-flow: column nowrap;
+        margin: 0 auto;
+    }
+
+
+    .info-mercado_ofertas,
+    .img-mercado {
+        display: block;
+    }
+
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4 {
+        height: 250px;
+        width: 250px;
+    }
+
+    
+
+    /* só mudando o tamanho da fonte no cookie */
+
+    .cookies-msg .cookies-txt {
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .cookies-msg .cookies-txt {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 866px) {
+
+    /* O AUMENTO E DIMINUIÇÃO DA CAIXA 3 */
+    .img-3 {
+        flex-basis: 300px;
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 646px) {
+
+    /* O AUMENTO E DIMINUIÇÃO DA CAIXA 3 */
+    .img-3 {
+        flex-basis: 250px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .boxImgOtherDisplaysCelulares {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url("img/BvMercado/boas-vindas-mercado-celulares.png");
+        width: 100%;
+        height: 100%;
+    }
+
+    .boxImgOtherDisplaysPequeno {
+        display: none;
+    }
+
+    .sec-boas_vindas {
+        margin: 0;
+    }
+
+    
+    /* só mudando o tamanho da fonte no cookie */
+
+    .cookies-msg {
+        width: 90%;
+    }
+
+    .cookies-msg .cookies-txt {
+        display: block;
+    }
+
+    .cookies-msg .cookies-btn .btn-aceito {
+        padding: 10px 20px;
+    }
+    
+    .cookies-msg .cookies-btn .btn-nao-aceito {
+        padding: 10px 20px;
+    }
+}
+
+
+@media screen and (width <=451px) {
+    .boxImage_acenando {
+        /* background: yellow; */
+        width: 100%;
+        position: absolute;
+        /* background-color: #ff1d1d; */
+        max-height: 50px;
+    }
+
+    .title-quemsou {
+        position: absolute;
+        text-align: center;
+        height: 107px;
+        width: 100%;
+    }
+
+    .title-quemsou p {
+        font-size: 52px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        /* background: #7c4f4f; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img_acenando {
+        cursor: default;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+    }
+
+    .BoxDesc_quemsou {
+        width: 100%;
+        margin-top: 500px;
+        position: absolute;
+        height: 80%;
+        flex-direction: column;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .desc_quemsou {
+        margin: 20px;
+        /* background: blue;   */
+    }
+
+    .main-content {
+        height: 3500px;
+    }
+}
+
+
+@media screen and (width < 810px) {
+    .sobre {
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        /* background-color: #ccc;   */
+        padding: 0;
+    }
+
+    .boxImage_acenando {
+        /* background: yellow; */
+        width: 100%;
+        position: absolute;
+        /* background-color: #ff1d1d; */
+        max-height: 400px;
+    }
+
+    .BoxDesc_quemsou {
+        width: 100%;
+        margin-top: 500px;
+        position: absolute;
+        height: 80%;
+        flex-direction: column;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .boxSectionDepoimento {
+        margin-top: 1000px;
+    }
+}
+
+@media screen and (width < 565px) {
+    .desc_quemsou {
+        font-size: 20px;
+    }
+}
+
+@media screen and (width < 481px) {
+    .desc_quemsou {
+        font-size: 21px;
+    }
+}
+
+@media screen and (width < 452px) {
+    .boxSectionDepoimento {
+        margin-top: 1250px;
+    }
+
+    .BoxDesc_quemsou {
+        row-gap: 3px;
+        height: 700px;
+    }
+}
+
+@media screen and (width <=332px) {
+    .desc_quemsou {
+        font-size: 19px;
+    }
+}
+
+@media screen and (width <=296px) {
+    .desc_quemsou {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .cookies-msg .cookies-txt {
+        font-size: 13px;
+    }
+}
